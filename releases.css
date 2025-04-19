@@ -1,0 +1,73 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 75px;
+}
+
+.event-table {
+    width: 100%;
+    border: 2px solid #93B5C6;
+    border-spacing: 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.event-table th {
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #93B5C6;
+    background-color: #213A5C;
+    color: white;
+}
+
+.event-table td {
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #93B5C6;
+}
+
+.event-table thead {
+    background-color: #213A5C;
+}
+
+.event-table tbody tr {
+    min-height: 60px;
+    height: 60px;
+}
+
+.event-table tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.event-table tbody tr:nth-child(odd) {
+    background-color: #E0E0E0;
+}
+
+.event-table tbody tr:hover {
+	background-color: #AACCDD;
+    color: #213A5C;
+}
+
+.event-table td.type-column {
+    text-align: center;
+}
+
+.platform-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.platform-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.platform-ps5 { grid-column: 1; }
+.platform-xbox { grid-column: 2; }
+.platform-switch2 { grid-column: 3; }
+.platform-steam { grid-column: 4; }

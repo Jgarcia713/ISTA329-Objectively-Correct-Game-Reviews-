@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <title>Objectively Correct Game Reviews</title>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset='utf-8'>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="content-link">
+        <div class="logo" role="banner">
+          <img src="test.jpg" alt="dog with the butter" width="50">
+          <h1>Objectively Correct Game Reviews</h1>
+        </div>
+      </a>
+    </header>
+    <main>
+      <h2><strong>Contact Us</strong></h2>
+      <ul>
+        <li class="content-block">
+          <div class="content-link">
+            <div role="navigation">
+              <h3><strong>About Us</strong></h3>
+              <p>We are students from the University of Arizona who created this website to share honest, unbiased reviews on video games. Meet the team:</p>
+              <ul>
+                <li><strong>Trevor:</strong> FPS wizard and top-tier sniper.</li>
+                <li><strong>Jakob:</strong> The lore master and RPG strategist.</li>
+                <li><strong>Valerie:</strong> The ultimate release-day hunter.</li>
+                <li><strong>Rylie:</strong> The completionist—100% or bust!</li>
+              </ul>
+              <p>Together, we aim to bring you the most reliable and enjoyable gaming reviews on the web.</p>
+            </div>
+          </div>
+        </li>
+        <li class="content-block">
+          <div class="content-link">
+            <div role="navigation">
+              <h3><strong>Send Us a Message</strong></h3>
+              <form action="#" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+
+                <button type="submit">Send Message</button>
+              </form>
+              <p><strong>Email:</strong> <a href="mailto:info@objectively-correct-reviews.com">info@objectively-correct-reviews.com</a></p>
+              <p><strong>Phone:</strong> (555) 123-4567</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+    <script>
+      document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent real submission
+        const name = document.getElementById("name").value;
+        alert(`Thanks, ${name}! Your message has been sent.`);
+        
+        // Optionally clear the form
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

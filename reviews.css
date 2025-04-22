@@ -32,19 +32,6 @@ h4 {
 	text-shadow: 2px 2px #0E2038;
 }
 	
-.content-link {
-	text-decoration: none;
-	display : flex;
-	color : #FFFFFF;
-}
-.content-link > div {
-	width : 100%;
-}
-
-.content-link > .logo:hover {
-	filter : opacity(80%);
-}
-
 .game-review {
 	background-color: #213A5C;
 	color: #FFFFFF;

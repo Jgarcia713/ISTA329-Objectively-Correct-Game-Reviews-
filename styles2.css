@@ -100,8 +100,17 @@ button:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 15px;
   background-color: #213A5C;
   color: white;
-  margin-top: 40px;
+  padding-top : 20px;
+  padding-bottom : 20px;
+}
+
+footer > p {
+	padding-top : 10px;
+	  
+}
+
+footer .email {
+	color : #0088FF;
 }

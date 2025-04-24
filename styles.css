@@ -88,3 +88,24 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+body {
+	display : flex;
+	flex-direction : column;
+	min-height: 100vh;
+}
+
+main {
+	padding-bottom : 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #213A5C;
+  color: white;
+  margin-top: auto;
+}
+
+footer .email {
+	color : #0088FF;
+}

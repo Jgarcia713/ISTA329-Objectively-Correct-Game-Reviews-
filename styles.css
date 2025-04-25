@@ -17,6 +17,12 @@ header {
 	display : flex;
 	color : #FFFFFF;
 }
+
+.content-link img {
+	width : 150px;
+	height: 150px;
+}
+
 .content-link > div {
 	width : 100%;
 }

@@ -1,1 +1,0 @@
-# ISTA329-Objectively-Correct-Game-Reviews-

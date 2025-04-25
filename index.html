@@ -1,56 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objectively Correct Game Reviews</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="icons/logo.png" type="image/x-icon">
+  <meta charset='utf-8'>
   <meta name="description" content="Objectively Correct Game Reviews - Articles, News, and More on Your Favorite Games">
   <meta name="keywords" content="gaming, news, articles, trailers, RPG, FPS, open world">
-  <meta name="author" content="Your Name">
-  <title>Objectively Correct Game Reviews</title>
-  <link rel="stylesheet" href="styles2.css">
-  <link rel="icon" href="icons/logo.png" type="image/x-icon">
-  <script defer src="script.js"></script>
 </head>
+
 <body>
   <!-- Banner -->
   <header>
-    <div class="banner">
-      <div class="header-container">
-        <div class="logo-left">
-          <a href="index.html">
-            <img src="icons/logo.png" alt="gamer crab" class="logo-img" width="50" style="padding-left: 5px;">
-          </a>
-        </div>
-        <h1 class="site-title">Objectively Correct Game Reviews</h1>
+    <a href="index.html" class="content-link">
+      <div class="logo" role="banner">
+        <img src="icons/logo.png" alt="Objectively Correct Game Reviews Logo" width="80">
+        <h1>Objectively Correct Game Reviews</h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Main Content -->
   <main>
-    <h2>Welcome to Objectively Correct Gaming Reviews</h2>
-    <p>Explore the latest articles, news, and videos on your favorite games.</p>
-
+    <div class="h2-container">
+		<h2>Welcome to Objectively Correct Game Reviews</h2>
+		<h3>Explore the latest articles, news, and videos on your favorite games.</h3>
+	</div>
     <!-- Multimedia: YouTube video -->
-    <section>
+    <div class="index-block">
+	<div class="two-column-container">
+    <!-- Featured Game Trailer Section -->
+    <div class="index-section">
       <h3>Featured Game Trailer</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/QdBZY2fkU-0" frameborder="0" allowfullscreen></iframe>
-    </section>
+      <div class="trailer-card" data-platforms="xbox ps5 steam">
+        <div class="trailer-video">
+          <iframe src="https://www.youtube.com/embed/QdBZY2fkU-0?rel=0"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="trailer-info">
+          <h3 class="trailer-title">Grand Theft Auto VI</h3>
+          <div class="trailer-platforms">
+            <span class="platform-tag" title="PlayStation 5">
+              <img src="icons/PS5.png" alt="PlayStation 5" width="20" height="20">
+            </span>
+                      
+            <span class="platform-tag" title="Xbox Series X/S">
+              <img src="icons/Xbox.png" alt="Xbox Series X/S" width="20" height="20">
+            </span>
+                      
+            <span class="platform-tag" title="Steam">
+              <img src="icons/Steam.png" alt="Steam" width="20" height="20">
+            </span>
+          </div>
+            <div class="trailer-release">Release Date: 2025</div>
+          </div>
+        </div>
+		</div>
 
-    <!-- JavaScript Section -->
-    <section>
-      <h3>Random Game Tip</h3>
-      <p id="game-tip">Click the button to get a tip!</p>
-      <button onclick="displayTip()">Show Tip</button>
-    </section>
+		<!-- JavaScript Section -->
+		<div class="index-section">
+		  <h3>Random Game Tip</h3>
+		  <p id="game-tip">Click the button to get a tip!</p>
+		  <button onclick="displayTip()">Show Tip</button>
+		</div>
+	  </div>
+	</div>
   </main>
 
   <!-- Footer -->
@@ -58,6 +82,7 @@
     <p><em>All trademarks and copyrights are the property of their respective owners. This site is not affiliated with or endorsed by any game developer or publisher.</em></p>
 	<p>&copy; 2025 Objectively Correct Game Reviews &#x2022; Contact us: <a href="mailto:info@objectively-correct-reviews.com" class="email">info@objectively-correct-reviews.com</a></p>
   </footer>
+  <script defer src="index.js"></script>
 </body>
 </html>
 
